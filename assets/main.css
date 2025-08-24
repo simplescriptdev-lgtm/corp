@@ -1,0 +1,46 @@
+/* assets/main.css — мінімальний, акуратний стиль */
+:root{--bg:#f5f7fb;--card:#fff;--border:#e5e8ef;--text:#222;--muted:#6b7280;--primary:#2563eb;--primary-hover:#1e4fd6;}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif;color:var(--text);background:var(--bg)}
+a{text-decoration:none;color:inherit}
+/* Login */
+body.login .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;box-shadow:0 8px 24px rgba(0,0,0,.06);width:100%;max-width:420px}
+.card h1{font-size:20px;margin:0 0 16px}
+.card label{display:block;margin:10px 0 6px;font-size:14px}
+.card input{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:8px}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;border:1px solid transparent;cursor:pointer;font-weight:600}
+.btn.primary{background:var(--primary);color:#fff}
+.btn.primary:hover{background:var(--primary-hover)}
+.alert{padding:10px 12px;border-radius:8px;margin:0 0 12px}
+.alert.error{background:#ffe7e7;border:1px solid #ffb4b4;color:#8a1f1f}
+.hint{font-size:12px;color:var(--muted);margin-top:8px}
+
+/* Layout */
+.page{display:flex;min-height:100vh}
+.sidebar{width:260px;background:#fff;border-right:1px solid var(--border);padding:16px 12px}
+.menu,.submenu{list-style:none;margin:0;padding:0}
+.menu>li{margin-bottom:6px}
+.menu>li>a{display:block;padding:10px 12px;border-radius:8px}
+.menu>li>a.active{background:#eef5ff;color:#1e40af;font-weight:700}
+.submenu{margin:6px 0 0 12px}
+.submenu li a{display:block;padding:8px 10px;border-radius:6px;color:#334155}
+.submenu li a.active{background:#eef5ff;color:#1e40af;font-weight:600}
+.content{flex:1;padding:20px}
+.section h2{margin:0 0 12px}
+
+/* Tables */
+table{width:100%;border-collapse:collapse}
+thead th{font-size:13px;color:#334155;text-align:left;border-bottom:1px solid var(--border);padding:10px 8px}
+tbody td{padding:10px 8px;border-bottom:1px solid #f0f3f8}
+tbody tr:hover{background:#fafcff}
+.table-actions .btn{padding:6px 10px;font-size:12px;border:1px solid var(--border);background:#fff}
+.table-actions .btn.danger{border-color:#fecaca;color:#991b1b}
+.table-actions .btn.outline{border-color:var(--border);}
+
+/* Cards */
+.card2{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px}
+.card2 .title{font-weight:700;margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.grid .card2 .value{text-align:right;font-weight:700}
+.actions{display:flex;gap:8px;margin-bottom:12px}
